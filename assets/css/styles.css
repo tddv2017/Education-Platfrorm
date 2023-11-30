@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common */
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 0px 16px;
+    line-height: 50px;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 999px;
+    background: #171100;
+    color: #FFF;
+    font-weight: 600;
+}
+
+/* ======= Header =========== */
+
+.header {
+    background-color: #FFFCF4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.header .body {
+    display: flex;
+    padding: 36px 0 8px;
+}
+
+.nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #5F5B53;
+    padding: 8px 21px;
+}
+
+.nav a:hover,
+.nav li.active a {
+    text-shadow: 1px 0 0 currentColor;
+    color: black;
+}
+
+.nav li.active a:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+    left: 21px;
+    bottom: 6px;
+}
+
+.header .sign-up-btn {
+    min-width: 144px;
+}
+
+.body .action {
+    margin-left: 49px;
+}
+
+/*=========== Hero ============*/
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 65px;
+    background: #FFFCF4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .media-block .img {
+    height: 685px;
+    width: 470px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero .media-block {
+    position: relative;
+    padding-right: 230px;
+}
+
+.hero .hero-summary {
+    position: absolute;
+    bottom: 48px;
+    right: 100px;
+    width: 270px;
+    height: 244px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+.hero .content-block .title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17241;
+    letter-spacing: -0.02em;
+}
+
+.hero .content-block .desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0em;
+    color: #5F5B53;
+}
+
+.hero .hero-summary .item {
+    display: flex;
+}
+
+.hero .hero-summary .icon {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .hero-summary .item+.item {
+    margin-top: 14px;
+}
+
+.hero .hero-summary .item .info {
+    padding-left: 16px;
+}
+
+.hero-summary .item .info .label {
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.hero-summary .item .info .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.hero .content-block .action {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .content-block .action .btn {
+    min-width: 180px;
+    line-height: 64px;
+    background-color: #FFB900;
+}
+
+.content-block .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 28px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.content-block .watch-video {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+.content-block .watch-video span {
+    margin-left: 14px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.content-block .desc:nth-of-type(2) {
+    margin-top: 48px;
+}
+
+.content-block .desc:nth-of-type(3) {
+    margin-top: 8px;
+}
+
+.content-block .desc strong {
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+
+.content-block .desc strong:last-child {
+    margin-left: 28px;
+}
+
+.courses .heading {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses .heading .title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.courses .heading .desc {
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.66;
+    width: 458px;
+}
+
+.courses .heading .icon .btn-pre,
+.btn-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-next {
+    background-color: #FFB900;
+    border: none;
+    margin-left: 18px;
+}
+
+.btn-pre {
+    background: #FFFFFF;
+    border: 1px solid #FFB900;
+}
+
+.courses .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses .body .card-item {
+    margin-top: 55px;
+    width: 370px;
+    height: 466px;
+    border-radius: 12px;
+    border: 1px solid #E2DFDA;
+    background: #FFF;
+}
+
+.courses .body .card-item .thumb {
+    width: 370px;
+    height: 278px;
+    object-fit: cover;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.courses .body .card-body {
+    margin: 22px;
+}
+
+.courses .body .card-body .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses .body .card-body .card-header .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+    letter-spacing: 0em;
+}
+
+.courses .body .card .desc {
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85714;
+    margin-top: 6px;
+}
+
+.courses .card-item .card-action-price {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+
+.courses .card-item .card-action-price .price {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.courses .card-item .card-action-price .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 118px;
+    height: 50px;
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85;
+    cursor: pointer;
+}
