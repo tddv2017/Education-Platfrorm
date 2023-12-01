@@ -12,6 +12,10 @@ body {
 }
 
 /* Common */
+:root {
+    --primary-color: #FFB900
+}
+
 .main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -270,23 +274,27 @@ a {
     width: 458px;
 }
 
-.courses .heading .icon .btn-pre,
-.btn-next {
+.courses .icon {
+    display: flex;
+    gap: 18px;
+}
+
+.courses .icon .btn-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.courses .icon .btn-control:hover {
+    background-color: var(--primary-color);
+    color: white;
     cursor: pointer;
-}
-
-.btn-next {
-    background-color: #FFB900;
-    border: none;
-    margin-left: 18px;
-}
-
-.btn-pre {
-    background: #FFFFFF;
-    border: 1px solid #FFB900;
 }
 
 .courses .body {
