@@ -113,6 +113,7 @@ a {
     width: 470px;
     object-fit: cover;
     border-radius: 20px;
+    vertical-align: bottom;
 }
 
 .hero .media-block {
