@@ -121,6 +121,7 @@ a {
 }
 
 .hero .hero-summary {
+    padding: 28px 24px;
     position: absolute;
     bottom: 48px;
     right: 100px;
