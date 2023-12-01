@@ -27,6 +27,11 @@ body {
     --line-clamp: 2
 }
 
+.break-all {
+    word-break: break-all;
+    ;
+}
+
 .main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -316,11 +321,15 @@ a {
 
 .courses .body {
     display: flex;
+    margin-top: 55px;
     gap: 30px;
 }
 
+.courses .body .card {
+    flex: 1;
+}
+
 .courses .body .card-item {
-    margin-top: 55px;
     height: 466px;
     border-radius: 12px;
     border: 1px solid #E2DFDA;
