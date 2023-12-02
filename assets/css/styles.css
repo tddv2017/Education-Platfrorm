@@ -72,6 +72,13 @@ a {
     letter-spacing: -0.02em;
 }
 
+.heading-lv3 {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
 .card-item {
     height: 467px;
     border-radius: 12px;
@@ -689,4 +696,89 @@ a {
 .blog .dot {
     cursor: pointer;
     background-color: #5F5B53;
+}
+
+/* ======Footer====== */
+.footer {
+    background: #2E2100;
+    padding: 96px 0 28px 0;
+}
+
+.footer .row-top {
+    display: flex;
+}
+
+.footer .row-top .col:first-child {
+    width: 35%;
+}
+
+.footer .row-top .col {
+    width: 21.6%;
+}
+
+.footer .row-top .col .social-icon {
+    display: inline-flex;
+    margin-top: 18px;
+}
+
+.footer .row-top .col .social-icon img+img {
+    margin-left: 18px;
+}
+
+.footer .row-top .col .heading-lv3::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 1px;
+    background: #59554B;
+    bottom: 0;
+    left: 0;
+    margin-top: 14px;
+}
+
+.footer .col .desc {
+    max-width: 267px;
+    margin-top: 18px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.footer .col .list .item {
+    margin-top: 43px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85714;
+}
+
+.footer .col .list .item+.item {
+    margin-top: 12px;
+}
+
+.footer .col .list .item strong {
+    color: #FFF;
+    font-weight: 600;
+}
+
+.footer .row-bottom .copyright::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1170px;
+    height: 1px;
+    background: #59554B;
+    top: -28px;
+}
+
+.footer .row-bottom .copyright {
+    position: relative;
+    margin-top: 67px;
+    color: #807D74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
 }
