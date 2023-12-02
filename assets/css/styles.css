@@ -57,6 +57,20 @@ a {
     font-weight: 600;
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
+
+.heading-lv2 {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.27;
+    letter-spacing: -0.02em;
+}
+
 /* ======= Header =========== */
 
 .header {
@@ -113,10 +127,6 @@ a {
     min-width: 144px;
 }
 
-.header .sign-up-btn:hover {
-    background-color: var(--primary-color);
-    color: currentColor;
-}
 
 .body .action {
     margin-left: 49px;
@@ -277,14 +287,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.courses .heading .title {
-    color: #171100;
-    font-family: Sen;
-    font-size: 3.8rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
 }
 
 .courses .heading .desc {
@@ -497,4 +499,71 @@ a {
     font-style: italic;
     font-weight: 400;
     line-height: 1.54;
+}
+
+/* ========= Features ========= */
+
+.features .body {
+    display: flex;
+    margin-top: 135px;
+    padding: 65px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features .body .image {
+    display: flex;
+    gap: 0 30px;
+}
+
+.features .body .image img {
+    object-fit: cover;
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+}
+
+.features .body .image img:first-child {
+    margin-top: 34px;
+}
+
+.features .content {
+    width: 41%;
+}
+
+.features .content .desc,
+.sub-desc {
+    color: #5F5B53;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.features .content .desc,
+.sub-desc {
+    margin-top: 16px;
+}
+
+.features .content .btn {
+    min-width: 137px;
+    margin-top: 32px;
+    background: var(--primary-color);
+}
+
+.features-2nd .body {
+    margin-top: 70px;
+}
+
+.features-2nd .body .image img {
+    width: 470px;
+}
+
+.features-2nd .content {
+    margin-left: 0;
+    width: 49%;
+}
+
+.features-2nd .body .image img:first-child {
+    margin-top: 0px;
 }
