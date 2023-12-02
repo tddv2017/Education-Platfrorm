@@ -11,9 +11,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Common */
+/* =========Common========= */
 :root {
-    --primary-color: #FFB900
+    --primary-color: #FFB900;
+    --background-primary-color: #FFFCF4
 }
 
 .line-clamp {
@@ -71,10 +72,48 @@ a {
     letter-spacing: -0.02em;
 }
 
+.card-item {
+    height: 467px;
+    border-radius: 12px;
+    border: 1px solid #E2DFDA;
+    background: #FFF;
+}
+
+.card-item:hover {
+    border-color: transparent;
+    background: #FFF;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.thumb {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.dots {
+    margin-top: 28px;
+    display: flex;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.dot+.dot {
+    margin-left: 6px;
+}
+
 /* ======= Header =========== */
 
 .header {
-    background-color: #FFFCF4;
+    background-color: var(--background-primary-color);
 }
 
 .header.fixed {
@@ -137,7 +176,7 @@ a {
 .hero {
     padding-top: 64px;
     padding-bottom: 65px;
-    background: #FFFCF4;
+    background: var(--background-primary-color);
 }
 
 .hero .body {
@@ -333,15 +372,6 @@ a {
 
 .courses .body .card-item {
     height: 466px;
-    border-radius: 12px;
-    border: 1px solid #E2DFDA;
-    background: #FFF;
-}
-
-.courses .body .card-item:hover {
-    border-color: transparent;
-    background: #FFF;
-    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 
 .courses .body .card-item .thumb {
@@ -457,29 +487,12 @@ a {
     line-height: 1.41;
 }
 
-.feedback-list .info .desc {
-    margin-top: 4px;
-    color: #BFBCB2;
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.85;
-}
-
-.feedback-list .info .dots {
-    margin-top: 28px;
-    display: flex;
-}
-
 .feedback-list .info .dot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background: #634700;
     cursor: pointer;
-}
-
-.feedback-list .info .dot+.dot {
-    margin-left: 6px;
 }
 
 .feedback-list .info .active {
@@ -541,11 +554,11 @@ a {
 }
 
 .features .content .desc,
-.sub-desc {
+.features .content .sub-desc {
     margin-top: 16px;
 }
 
-.features .content .btn {
+.features .content .btn-cta {
     min-width: 137px;
     margin-top: 32px;
     background: var(--primary-color);
@@ -566,4 +579,114 @@ a {
 
 .features-2nd .body .image img:first-child {
     margin-top: 0px;
+}
+
+/* ======== Blog ========= */
+
+.blog {
+    margin-top: 135px;
+    background-color: var(--background-primary-color);
+    padding: 96px 0;
+}
+
+
+.blog .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.blog .info .desc {
+    width: 448px;
+    margin-top: 16px;
+    color: #696262;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.blog .card-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.blog .card-item {
+    width: 31%;
+    flex-shrink: 0;
+}
+
+.blog .card-item .thumb {
+    height: 250px;
+}
+
+.blog .card-info {
+    margin: 20px 20px 28px 20px;
+}
+
+.blog .body .active {
+    background: var(--primary-color);
+}
+
+.blog .card-info .sub-desc {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.blog .card-info .sub-desc::before {
+    display: inline-block;
+    content: "";
+    background-color: var(--primary-color);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.blog .card-info .sub-desc::after {
+    display: inline-block;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: -27px;
+    content: "";
+    height: 1px;
+    border-radius: 0.5px;
+    background: #E2DFDA;
+}
+
+.blog .card-item .desc {
+    margin-top: 25px;
+    color: #171100;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.blog .card-item .btn-cta {
+    font-size: 1.4rem;
+    margin-top: 12px;
+}
+
+.blog .card-item .btn-cta:hover {
+    background-color: var(--primary-color);
+}
+
+.blog .dots {
+    display: flex;
+    justify-content: center;
+}
+
+.blog .dot {
+    cursor: pointer;
+    background-color: #5F5B53;
 }
