@@ -721,7 +721,7 @@ a {
     margin-top: 18px;
 }
 
-.footer .row-top .col .social-icon img+img {
+.footer .row-top .col .social-icon a+a {
     margin-left: 18px;
 }
 
